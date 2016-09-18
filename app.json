@@ -1,6 +1,4 @@
 {
-  "name": "Poor man's suggested tags for Pocket",
-  "description": "Add tags to saved articles automatically; helped by Hatena Bookmark",
   "env": {
     "CONSUMER_KEY": {
       "description": "CONSUMER_KEY of your own Pocket Developer API application"
@@ -13,13 +11,10 @@
     "web": {
       "quantity": 1,
       "size": "free"
-    },
-    "worker": {
-      "quantity": 1,
-      "size": "free"
     }
   },
   "addons": [
-    "heroku-redis:hobby-dev"
+    "heroku-redis:hobby-dev",
+    "scheduler:standard"
   ]
 }
