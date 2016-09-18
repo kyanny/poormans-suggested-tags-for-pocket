@@ -5,7 +5,7 @@
     },
     "CALLBACK_URL": {
       "description": "OAuth2 callback url of Pocket Developer API (Set deployed app's base URL; e.g. http://localhost:9292)",
-      "required": false
+      "value": "https://update-later-12345.herokuapp.com"
     }
   },
   "formation": {
