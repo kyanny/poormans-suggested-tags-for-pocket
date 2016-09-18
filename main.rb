@@ -31,7 +31,7 @@ list.each do |_item|
   end
   next if data.nil?
   tags = []
-  data['bookmarks'].each do |bookmark|
+  data['bookmarks'].to_a.each do |bookmark|
     tags << bookmark['tags']
   end
   tags = tags.flatten.compact
