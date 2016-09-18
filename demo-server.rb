@@ -4,7 +4,7 @@ require 'redis'
 
 CALLBACK_URL = ENV.fetch('CALLBACK_URL') + "/oauth/callback"
 
-$redis = Redis.new
+$redis = Redis.new(url: ENV.fetch('REDIS_URL'))
 
 Pocket.configure do |config|
   config.consumer_key = ENV.fetch('CONSUMER_KEY')

@@ -6,7 +6,7 @@ require 'cgi'
 require 'json'
 require 'pp'
 
-$redis = Redis.new
+$redis = Redis.new(url: ENV.fetch('REDIS_URL'))
 access_token = $redis.get('access_token')
 puts "access_token=#{access_token}"
 
