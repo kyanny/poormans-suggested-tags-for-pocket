@@ -4,7 +4,8 @@
       "description": "CONSUMER_KEY of your own Pocket Developer API application"
     },
     "CALLBACK_URL": {
-      "description": "OAuth2 callback url of Pocket Developer API"
+      "description": "OAuth2 callback url of Pocket Developer API (Set deployed app's base URL; e.g. http://localhost:9292)",
+      "required": false
     }
   },
   "formation": {
